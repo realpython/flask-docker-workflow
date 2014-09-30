@@ -11,4 +11,5 @@ test:
   override:
     - docker run -d -p 80:80 flask-docker-workflow; sleep 10
     - curl --retry 10 --retry-delay 5 -v http://localhost:80
+    - python pip install -r requirements.txt
     - python app/tests.py
