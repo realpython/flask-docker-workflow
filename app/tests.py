@@ -8,6 +8,7 @@ class MainTestCase(unittest.TestCase):
         tester = app.test_client(self)
         response = tester.get('/data')
         self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.content_type, 'application/json')
 
     def test_index(self):
         tester = app.test_client(self)
