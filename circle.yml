@@ -18,4 +18,4 @@ deployment:
   hub:
     branch: master
     commands:
-      - curl --data "build=true" -X POST https://registry.hub.docker.com/u/mjhea0/flask-docker-workflow/trigger/{$TOKEN}
+      - curl --data "build=true" -X POST https://registry.hub.docker.com/u/mjhea0/flask-docker-workflow/trigger/$TOKEN
