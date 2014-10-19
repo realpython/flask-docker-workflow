@@ -5,7 +5,7 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker build -t flask-docker-workflow .
+    - docker build -t mjhea0/flask-docker-workflow .
 
 test:
   override:
