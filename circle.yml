@@ -19,3 +19,7 @@ deployment:
     branch: master
     commands:
       - $DEPLOY
+  production:
+    branch: master
+    commands:
+      - ./deploy.sh
