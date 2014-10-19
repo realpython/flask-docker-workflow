@@ -19,6 +19,8 @@ deployment:
     branch: master
     commands:
       - $DEPLOY
+
+deployment:
   production:
     branch: master
     commands:
