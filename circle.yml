@@ -24,4 +24,4 @@ deployment:
   production:
     branch: master
     commands:
-      - ./fab deploy
+      - fab deploy
