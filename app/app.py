@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Flask is running (on Docker)!'
+    return 'Flask is running on Docker!'
 
 
 @app.route('/data')
