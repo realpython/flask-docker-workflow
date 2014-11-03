@@ -1,5 +1,3 @@
-*.pyc
-*.DS_Store
-part1.md
-part2.md
-part3.md
+.pyc
+.DS_Store
+env

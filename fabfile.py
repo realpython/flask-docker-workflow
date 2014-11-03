@@ -11,7 +11,6 @@ from fabric.api import run, env
 
 env.hosts = ['104.131.123.130']  # replace with IP address or hostname
 env.user = 'root'
-# env.password = 'password'
 
 
 #############
@@ -20,8 +19,10 @@ env.user = 'root'
 
 def deploy():
     """
-    1. Copy new Flask files
-    2. Restart gunicorn via supervisor
+    1. Get the PID of current running container
+    2. Pull latest image from docker hub
+    3. Kill the current container
+    4. Run the new container
     """
     run("OLDPORT=( `docker ps | grep flask-docker-workflow | awk '{print $1}'` )")
     run("docker pull mjhea0/flask-docker-workflow")
