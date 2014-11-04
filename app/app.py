@@ -9,11 +9,11 @@ def index():
     return 'Flask is running on Docker!'
 
 
-# @app.route('/data')
+@app.route('/data')
 def cities():
     data = {
         "cities": ["Seattle", "San Francisco", "Chicago",
-                   "New York", "Denver", "San Diego"]
+                   "New York", "Denver", "San Diego", "Tokyo"]
     }
     return jsonify(data)
 
