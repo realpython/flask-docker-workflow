@@ -11,7 +11,10 @@ def index():
 
 @app.route('/data')
 def cities():
-    data = {"cities": ["Seattle", "San Francisco", "Chicago", "New York"]}
+    data = {
+        "cities": ["Seattle", "San Francisco", "Chicago",
+                   "New York", "Denver", "San Diego", "Tokyo"]
+    }
     return jsonify(data)
 
 
