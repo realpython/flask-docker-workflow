@@ -6,6 +6,8 @@ MAINTAINER Real Python <info@realpython.com>
 RUN apt-get update
 RUN apt-get install -y nginx
 RUN apt-get install -y supervisor
+RUN apt-get install -y python
+RUN apt-get install -y python-dev
 RUN apt-get install -y python-pip
 RUN pip install uwsgi flask
 
