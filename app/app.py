@@ -13,7 +13,7 @@ def index():
 def cities():
     data = {
         "cities": ["Seattle", "San Francisco", "Chicago",
-                   "New York", "Denver", "San Diego", "Tokyo"]
+                   "New York", "Denver", "San Diego", "Tokyo", "Warsaw"]
     }
     return jsonify(data)
 
